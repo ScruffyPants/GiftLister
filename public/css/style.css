@@ -1,0 +1,42 @@
+*{
+    padding:0px;
+    margin:0px;
+    background-color: #C11B17;
+    font-family: 'Playfair Display', serif;
+}
+form{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    width:95vw;
+    height: 80vh;
+}
+form, p{
+    #margin-top: 1vh;
+}
+form:first-child{
+    text-align: center;
+    font-size: 500%;
+}
+input{
+    border-color: #FFFFFF;
+    border-style: dotted;
+    width:100%;
+    font-size: 100%;
+    text-align: center;
+    border-width: thick;
+
+    animation-name: blink ;
+    animation-duration: .5s ;
+    animation-timing-function: step-end ;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate ;
+}
+#submitButton > input{
+    border-top: none;
+}
+@keyframes blink {
+    50% { border-color: #FDD017; }
+}
