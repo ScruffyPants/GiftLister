@@ -68,4 +68,42 @@ class AdminController extends Controller
         $newLogin .= rand(10,999);
         return $newLogin;
     }
+
+    function drawNames(){
+        $query = DB::select("SELECT Name FROM presents");
+        $i = 0;
+        $y = 1;
+
+        foreach ($query as $info){
+           $nameArray[$i] = $info->Name;
+           $drawnArray[$y] = $info->Name;
+           $i++;
+           $y++;
+        }
+
+        $temp = $drawnArray[sizeof($drawnArray)];
+        array_unshift($drawnArray, $temp);
+        array_pop($drawnArray);
+
+        $iterations = rand(1000, 5000);
+
+        for($i=0; $i<$iterations; $i++){
+            $temp1 = rand(0, sizeof($drawnArray)-1);
+            $temp2 = rand(0, sizeof($drawnArray)-1);
+
+            while($temp2 == $temp1) $temp2 = rand(0, sizeof($drawnArray)-1);
+
+            if($drawnArray[$temp1] != $nameArray[$temp2] && $drawnArray[$temp2] != $nameArray[$temp1]){
+                $tempx = $drawnArray[$temp1];
+                $tempy = $drawnArray[$temp2];
+                $drawnArray[$temp1] = $tempy;
+                $drawnArray[$temp2] = $tempx;
+            }
+        }
+
+        for($i=0; $i<sizeof($nameArray); $i++)
+            DB::table('presents')->where('Name', $nameArray[$i])->update(["DrawnName"=>$drawnArray[$i]]);
+
+        return redirect("adminPanel");
+    }
 }
