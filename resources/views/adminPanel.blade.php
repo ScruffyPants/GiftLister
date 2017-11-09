@@ -19,7 +19,7 @@
                 @foreach($infoArray as $info)
                     <tr>
                         <td>{{$info -> Name}}</td>
-                        <td>{{$info -> DrawnName}}</td>
+                        <td id="drawnName">{{$info -> DrawnName}}</td>
                         <td>{{$info -> Login}}</td>
                         <td><button onclick="deleteID({{$info->ID}})">DELETE</button></td>
                     </tr>

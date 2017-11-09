@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Crypt;
+use App\User;
+use App\Http\Controllers\Controller;
 
 class AdminController extends Controller
 {
@@ -85,7 +88,7 @@ class AdminController extends Controller
         array_unshift($drawnArray, $temp);
         array_pop($drawnArray);
 
-        $iterations = rand(1000, 5000);
+        $iterations = rand(10000, 50000);
 
         for($i=0; $i<$iterations; $i++){
             $temp1 = rand(0, sizeof($drawnArray)-1);
@@ -101,8 +104,11 @@ class AdminController extends Controller
             }
         }
 
-        for($i=0; $i<sizeof($nameArray); $i++)
-            DB::table('presents')->where('Name', $nameArray[$i])->update(["DrawnName"=>$drawnArray[$i]]);
+        for($i=0; $i<sizeof($nameArray); $i++) {
+            $encryptedName = Crypt::encrypt($drawnArray[$i]);
+            //print_r($encryptedName);
+            DB::table('presents')->where('Name', $nameArray[$i])->update(["DrawnName" => $encryptedName]);
+        }
 
         return redirect("adminPanel");
     }
