@@ -34,7 +34,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="500">
@@ -57,6 +57,22 @@
                     <marker date="1510234275598" expanded="true" signature="760:782" ph="SELECT * FRO... presents" />
                     <marker date="1510234275598" expanded="true" signature="1531:1570" ph="SELECT * FRO... presents" />
                     <marker date="1510234275598" expanded="true" signature="2060:2085" ph="SELECT Name presents" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#40#68#0#PHP" expanded="true" />
+                    <marker date="1510238566631" expanded="true" signature="344:380" ph="SELECT * FRO... presents" />
+                    <marker date="1510238566631" expanded="true" signature="344:382" ph="SELECT * FRO... presents" />
+                    <marker date="1510238566631" expanded="true" signature="344:397" ph="SELECT * FRO... presents" />
+                    <marker date="1510238566631" expanded="true" signature="344:398" ph="SELECT * FRO... presents" />
                   </folding>
                 </state>
               </provider>
@@ -146,7 +162,6 @@
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -156,6 +171,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/adminPanel.blade.php" />
         <option value="$PROJECT_DIR$/public/css/admin.css" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
       </list>
     </option>
   </component>
@@ -291,7 +307,47 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DovanuTraukejas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DovanuTraukejas" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DovanuTraukejas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DovanuTraukejas" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,12 +458,12 @@
       <option name="presentableId" value="Default" />
       <updated>1510156241850</updated>
       <workItem from="1510156246658" duration="19564000" />
-      <workItem from="1510231889367" duration="3637000" />
+      <workItem from="1510231889367" duration="4614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23201000" />
+    <option name="totallyTimeSpent" value="24178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
@@ -543,14 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -613,14 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -675,6 +715,28 @@
             <marker date="1510234275598" expanded="true" signature="760:782" ph="SELECT * FRO... presents" />
             <marker date="1510234275598" expanded="true" signature="1531:1570" ph="SELECT * FRO... presents" />
             <marker date="1510234275598" expanded="true" signature="2060:2085" ph="SELECT Name presents" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <marker date="1510238566631" expanded="true" signature="344:380" ph="SELECT * FRO... presents" />
+            <marker date="1510238566631" expanded="true" signature="344:382" ph="SELECT * FRO... presents" />
+            <marker date="1510238566631" expanded="true" signature="344:397" ph="SELECT * FRO... presents" />
+            <marker date="1510238566631" expanded="true" signature="344:398" ph="SELECT * FRO... presents" />
           </folding>
         </state>
       </provider>

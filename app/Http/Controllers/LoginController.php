@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use Crypt;
+use Illuminate\Contracts\Encryption\DecryptException;
 
 class LoginController extends Controller
 {
@@ -11,6 +14,20 @@ class LoginController extends Controller
     }
 
     function doLogin(){
-        echo($_POST['loginCode']);
+        $loginCode = $_POST['loginCode'];
+        $query = DB::select("SELECT * FROM presents WHERE Login = '".$loginCode."'");
+
+        if(isset($query[0])){
+            try{
+                $drawnName = Crypt::decrypt($query[0]->DrawnName);
+            } catch(DecryptException $e){
+                echo "error: ".$e." PLEASE CONTACT THE SERVER ADMIN";
+            }
+
+            echo $drawnName;
+        }
+        else{
+            return redirect("login");
+        }
     }
 }
