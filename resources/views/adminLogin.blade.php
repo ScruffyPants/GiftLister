@@ -5,20 +5,22 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
     <body>
-    {{ Form::open(array('url' => 'adminLogin')) }}
-    <h1>Login</h1>
+        <div id="snow">
+            {{ Form::open(array('url' => 'adminLogin')) }}
+            <h1>Login</h1>
 
-    <!-- if there are login errors, show them here -->
-    <p>
-        {{ $errors->first('Username') }}
-    </p>
+            <!-- if there are login errors, show them here -->
+            <p>
+                {{ $errors->first('Username') }}
+            </p>
 
-    <p>
-        {{ Form::text('username') }}
-        {{ Form::password('password') }}
-    </p>
+            <p id="loginBox">
+                {{ Form::text('username') }}
+                {{ Form::password('password') }}
+            </p>
 
-    <p id="submitButton">{{ Form::submit('Login') }}</p>
-    {{ Form::close() }}
+            <p id="submitButton">{{ Form::submit('Login') }}</p>
+            {{ Form::close() }}
+        </div>
     </body>
 </html>

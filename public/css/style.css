@@ -1,17 +1,19 @@
 *{
     padding:0px;
     margin:0px;
-    background-color: #C11B17;
     font-family: 'Playfair Display', serif;
+}
+body{
+    background-color: #B6001C;
 }
 form{
     position: fixed;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    color: #FFFFFF;
-    width:95vw;
-    height: 80vh;
+    color: #DFD6CC;
+    width:60%;
+    max-width: 645px;
 }
 form, p{
     #margin-top: 1vh;
@@ -21,22 +23,92 @@ form:first-child{
     font-size: 500%;
 }
 input{
-    border-color: #FFFFFF;
-    border-style: dotted;
-    width:100%;
+    border: 1px;
+    border-style: solid;
+    color: #B6001C;
+    background-color: #A6DBD6;
     font-size: 100%;
     text-align: center;
-    border-width: thick;
-
-    animation-name: blink ;
-    animation-duration: .5s ;
-    animation-timing-function: step-end ;
-    animation-iteration-count: infinite ;
-    animation-direction: alternate ;
+    float:left;
+    border-color: #A6DBD6;
+    font-weight: bold;
+}
+#loginBox > input{
+    border-radius:15px 0px 0px 15px;
+    width: 70%;
+    border-right: none;
 }
 #submitButton > input{
-    border-top: none;
+    border-left:none;
+    border-radius: 0px 15px 15px 0px;
+    width: 30%;
 }
-@keyframes blink {
-    50% { border-color: #FDD017; }
+
+#info{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #704638;
+    width:60%;
+    text-align: center;
+    font-size: 3em;
+    background-color: #A6DBD6;
+
+    box-shadow:0 0 0 black;
+    clip-path:polygon(0 0, 5% 50%, 0 100%, 100% 100%, 95% 50%, 100% 0);
+}
+
+
+#triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 50px solid transparent;
+    float:right;
+}
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+    float:left;
+}
+
+#snow{
+    background: none;
+    font-family: Androgyne;
+    background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }

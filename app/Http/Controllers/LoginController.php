@@ -24,7 +24,7 @@ class LoginController extends Controller
                 echo "error: ".$e." PLEASE CONTACT THE SERVER ADMIN";
             }
 
-            echo $drawnName;
+            return view('reveal',['name'=>$drawnName]);
         }
         else{
             return redirect("login");
